@@ -1,6 +1,7 @@
 import './functions.test.js';
 //import { myFunction } from '../functions.js';
 import { addExclamationPoints } from '../functions.js';
+import { multiplyBySeven } from '../functions.js';
 
 const { test } = QUnit;
 
@@ -23,3 +24,10 @@ test('this test should return word with 3 exclamation points', (expect) => {
     expect.equal(actual, expected);
 });
 
+//Question 3
+
+test('this function should multiply a number by 7', (expect) => {
+    const expected = '28';
+    const actual = multiplyBySeven(4);
+    expect.equal(actual, expected);
+});
