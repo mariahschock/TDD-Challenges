@@ -4,6 +4,7 @@ import { addExclamationPoints } from '../functions.js';
 import { multiplyBySeven } from '../functions.js';
 import { multiplyBy12ThenHalve } from '../functions.js';
 import { divideThenMultiply } from '../functions.js';
+import { returnAsAnArray } from '../functions.js';
 
 const { test } = QUnit;
 
@@ -48,4 +49,12 @@ test ('this function should take in three numbers and return a product', (expect
     const expected = 10;
     const actual = divideThenMultiply(8, 4, 5);
     expect.equal(actual, expected);
+});
+
+//Question 6 
+
+test ('this function should take 3 numbers and return as a string', (expect) => {
+    const expected = '845';
+    const actual = returnAsAnArray(8, 4, 5);
+    expect.deepEqual(actual, expected);
 });
