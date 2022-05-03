@@ -3,6 +3,7 @@ import './functions.test.js';
 import { addExclamationPoints } from '../functions.js';
 import { multiplyBySeven } from '../functions.js';
 import { multiplyBy12ThenHalve } from '../functions.js';
+import { divideThenMultiply } from '../functions.js';
 
 const { test } = QUnit;
 
@@ -38,5 +39,13 @@ test('this function should multiply a number by 7', (expect) => {
 test ('this function should take a number * by 12 and half', (expect) => {
     const expected = '10';
     const actual = multiplyBy12ThenHalve(8, 4, 5);
+    expect.equal(actual, expected);
+});
+
+//Question 5
+
+test ('this function should take in three numbers and return a product', (expect) => {
+    const expected = 10;
+    const actual = divideThenMultiply(8, 4, 5);
     expect.equal(actual, expected);
 });
