@@ -51,7 +51,9 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    //return true;
+    return (num * 12) / 2;
+
 }
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
