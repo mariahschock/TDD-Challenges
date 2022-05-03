@@ -1,5 +1,6 @@
-export function myFunction() {
-    return true;
+//This function should take in a string name and return it as "hi ___ !"
+export function myFunction(name) {
+    return `hi ${name}!`;
 }
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 /* 
@@ -14,8 +15,9 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(word) {
+    //return true;
+    return `${word}!!!`;
 }
 
 // This function should take in a number and multiply it by seven
